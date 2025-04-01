@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}" />
     <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" />
-    <title>Argon Dashboard 2 Tailwind by Creative Tim</title>
+    <title>Propiy</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
@@ -27,7 +27,7 @@
     <!-- End Navbar -->
     
     <div class="relative mx-6 mt-6 rounded-2xl" style="background-image: url('{{ asset('assets/img/vr-bg.jpg') }}'); background-size: cover">
-      <aside class="fixed inset-y-0 dark:shadow-none dark:bg-slate-850 xl:animate-fade-up z-990 xl:scale-60 left-0 xl:left-[18%] flex-wrap items-center justify-between block w-full p-0 my-4 xl:ml-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-white border-0 shadow-none max-w-64 ease-nav-brand rounded-2xl xl:translate-x-0" aria-expanded="false">
+      <aside class="fixed inset-y-0 dark:shadow-none dark:bg-slate-850 xl:animate-fade-up z-990 xl:scale-60 left-0 xl:left-[18%] flex-wrap items-center justify-between block w-full p-0 my-4 xl:ml-4 antialiased transition-transform duration-200 -translate-x-full bg-white border-0 shadow-none max-w-64 ease-nav-brand rounded-2xl xl:translate-x-0" aria-expanded="false">
         @include('admin.plugins.sidenav')
       </aside>
 

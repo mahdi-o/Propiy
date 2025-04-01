@@ -12,3 +12,9 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer components {
+    .myActive{
+        @apply bg-blue-500/13 rounded-lg font-semibold text-slate-700;
+    }
+}

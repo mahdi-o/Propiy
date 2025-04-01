@@ -1,14 +1,21 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
+
+
+Route::get('/admin-user-info',[AdminController::class,'userInfo'])->name('user.info');
+
+
 Route::get('/', function () {
-    return view('index');
+    return view('admin.pages.dashboard');
 });
 
-Route::get('/index',function(){
-    return view('admin.pages.index');
-})->name('index');
+
+Route::get('/dashboard',function(){
+    return view('admin.pages.dashboard');
+})->name('dashboard');
 
 Route::get('/tables',function(){
     return view('admin.pages.tables');
