@@ -3,12 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
-Route::get('/admin',function(){
-return view('admin.dashboard');
-})->name('dashboard');
 
 Route::get('/index',function(){
     return view('admin.pages.index');
@@ -35,11 +31,11 @@ Route::get('/profile',function(){
 })->name('profile');
 
 Route::get('/signIn',function(){
-    return view('admin.pages.signIn');
+    return view('admin.pages.sign-in');
 })->name('signIn');
 
 Route::get('/signUp',function(){
-    return view('admin.pages.signUp');
+    return view('admin.pages.sign-up');
 })->name('signUp');
                     
                                                             
