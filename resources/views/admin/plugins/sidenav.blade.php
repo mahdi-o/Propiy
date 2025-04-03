@@ -26,22 +26,21 @@
             <li>
                 <details>
                     <summary
-                        class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex 
-                        items-center whitespace-nowrap px-4 transition-colors"
+                        class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
+                        items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
+                        hover:cursor-pointer"
                         href="#">
-                        <div
-                            class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i
-                                class="relative top-0 text-sm leading-normal 
-                            {{ Request::is('admin-user-info') ? 'text-orange-500' : 'text-gray-800' }} ni ni-single-02">
-                            </i>
-                        </div>
+                         
+                            <svg class="h-6 w-6 {{ Request::is('admin-user-info') || Request::is('admin-user-auth') ? 'text-orange-500' : 'text-gray-800' }}"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                            </svg>
+                        
                         <span
-                            class="text-gray-500 ml-1 duration-300 opacity-100 pointer-events-none ease">Account</span>
+                            class="text-center text-gray-500  duration-300 opacity-100 pointer-events-none ease">Account</span>
                     </summary>
                     <article>
                         <ul>
-                            <li class="mt-0.5 w-full">
+                            <li class="mt-0.5 w-full  hover:bg-gray-200 rounded-xl hover:cursor-pointer">
                                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
                                 whitespace-nowrap px-4 transition-colors "
                                     href="{{ route('user.info') }}">
@@ -57,7 +56,7 @@
                                 </a>
                             </li>
 
-                            <li class="mt-0.5 w-full">
+                            <li class="mt-0.5 w-full hover:bg-gray-200 rounded-xl hover:cursor-pointer">
                                 <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
                                 whitespace-nowrap px-4 transition-colors"
                                     href="{{ route('user.auth') }}">
