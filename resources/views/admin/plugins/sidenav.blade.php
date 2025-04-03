@@ -20,34 +20,37 @@
     <div class="items-center block w-auto max-h-screen h-sidenav grow basis-full">
 
 
-
-
-
-
         <ul class="flex flex-col pl-0 mb-0">
 
+          
             <li>
                 <details>
                     <summary
-                        class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap 
-                        px-4 transition-colors {{ Request::is('admin-user-info') ? 'myActive' : '' }}"
-                        href="{{ route('user.info') }}">
+                        class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex 
+                        items-center whitespace-nowrap px-4 transition-colors"
+                        href="#">
                         <div
                             class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                            <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-single-02"></i>
+                            <i
+                                class="relative top-0 text-sm leading-normal 
+                            {{ Request::is('admin-user-info') ? 'text-orange-500' : 'text-gray-800' }} ni ni-single-02">
+                            </i>
                         </div>
-                        <span class="text-gray-500 ml-1 duration-300 opacity-100 pointer-events-none ease">Account</span>
+                        <span
+                            class="text-gray-500 ml-1 duration-300 opacity-100 pointer-events-none ease">Account</span>
                     </summary>
                     <article>
                         <ul>
                             <li class="mt-0.5 w-full">
-                                <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2
-                       flex items-center whitespace-nowrap px-4 transition-colors
-                                   {{ Request::is('admin-user-info') ? 'myActive' : '' }}"
+                                <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
+                                whitespace-nowrap px-4 transition-colors "
                                     href="{{ route('user.info') }}">
                                     <div
                                         class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                                        <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-tv-2"></i>
+                                        <i
+                                            class="relative top-0 text-sm leading-normal h-2 w-2 
+                                        {{ Request::is('admin-user-info') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        </i>
                                     </div>
                                     <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">User
                                         Account</span>
@@ -55,12 +58,15 @@
                             </li>
 
                             <li class="mt-0.5 w-full">
-                                <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors
-                                   {{ Request::is('admin-user-auth') ? 'myActive' : '' }}"
+                                <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
+                                whitespace-nowrap px-4 transition-colors"
                                     href="{{ route('user.auth') }}">
                                     <div
                                         class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                                        <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-tv-2"></i>
+                                        <i
+                                            class="relative top-0 text-sm leading-normal h-2 w-2 
+                                        {{ Request::is('admin-user-auth') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        </i>
                                     </div>
                                     <span
                                         class="ml-1 duration-300 opacity-100 pointer-events-none ease">Authentication</span>
@@ -71,6 +77,9 @@
                 </details>
             </li>
 
+      
+            {{-- 
+            
             <li class="mt-0.5 w-full">
                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors
            {{ Request::is('dashboard') ? 'myActive' : '' }}"
@@ -158,6 +167,9 @@
                     </div>
                     <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Sign Up</span>
                 </a>
-            </li>
+            </li> 
+            
+            --}}
+
         </ul>
     </div>
