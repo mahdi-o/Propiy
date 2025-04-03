@@ -41,18 +41,18 @@
                     </svg>
                     <p class="text-md">verified (step1) </p>
                 </div>
-                <p class="text-md font-bold text-gray-400 text-center">|</p>
+                <p class="h-6 w-1 bg-gray-300 rounded-lg"></p>
                 <div class="flex flex-row gap-2">
                     <p class="text-sm"> Email </p>
                     <h6 class="text-sm">Mohammad0939@gmail.com</h6>
                 </div>
-                <p class="text-md font-bold text-gray-400 text-center">|</p>
+                <p class="h-6 w-1 bg-gray-300 rounded-lg"></p>
 
                 <div class="flex flex-row gap-2">
                     <p class="text-sm"> Membership Time </p>
                     <h6 class="text-sm">1403/12/09 19:35:04</h6>
                 </div>
-                <p class="text-md font-bold text-gray-400 text-center">|</p>
+                <p class="h-6 w-1 bg-gray-300 rounded-lg"></p>
 
                 <div class="flex flex-row gap-2">
                     <p class="text-sm"> Number of Challenges </p>

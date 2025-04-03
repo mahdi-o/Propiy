@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/admin-user-info',[AdminController::class,'userInfo'])->name('user.info');
 
+Route::get('/admin-user-auth',[AdminController::class,'userAuth'])->name('user.auth');
 
 Route::get('/', function () {
     return view('admin.pages.dashboard');
