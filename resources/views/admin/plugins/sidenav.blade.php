@@ -24,7 +24,7 @@
 
           
             <li>
-                <details>
+                <details {{ Request::is('admin-user-info') || Request::is('admin-user-auth') ? 'open' : '' }}>
                     <summary
                         class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
                         items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
@@ -36,7 +36,7 @@
                             </svg>
                         
                         <span
-                            class="text-center text-gray-500  duration-300 opacity-100 pointer-events-none ease">Account</span>
+                            class="text-center  duration-300 opacity-100 pointer-events-none ease">Account</span>
                     </summary>
                     <article>
                         <ul>
@@ -51,8 +51,7 @@
                                         {{ Request::is('admin-user-info') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
                                         </i>
                                     </div>
-                                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">User
-                                        Account</span>
+                                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">User Account</span>
                                 </a>
                             </li>
 
@@ -75,9 +74,59 @@
                     </article>
                 </details>
             </li>
-
       
-            {{-- 
+
+            <li>
+                <details {{ Request::is('admin-challenge') || Request::is('admin-challenge-free') ? 'open' : '' }}>
+                    <summary
+                        class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
+                        items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
+                        hover:cursor-pointer"
+                        href="#">
+                            <svg class="h-6 w-6 {{ Request::is('admin-challenge') || Request::is('admin-challenge-free') ? 'text-orange-500' : 'text-gray-800' }}"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                                <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="3" y="5" width="18" height="14" rx="3" />  <line x1="3" y1="10" x2="21" y2="10" />  <line x1="7" y1="15" x2="7.01" y2="15" />  
+                                <line x1="11" y1="15" x2="13" y2="15" /></svg>
+                        <span
+                            class="text-center  duration-300 opacity-100 pointer-events-none ease">My Challenges</span>
+                    </summary>
+                    <article>
+                        <ul>
+                            <li class="mt-0.5 w-full  hover:bg-gray-200 rounded-xl hover:cursor-pointer">
+                                <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
+                                whitespace-nowrap px-4 transition-colors "
+                                    href="{{ route('challenge') }}">
+                                    <div
+                                        class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                                        <i
+                                            class="relative top-0 text-sm leading-normal h-2 w-2 
+                                        {{ Request::is('admin-challenge') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        </i>
+                                    </div>
+                                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Challenges</span>
+                                </a>
+                            </li>
+
+                            <li class="mt-0.5 w-full hover:bg-gray-200 rounded-xl hover:cursor-pointer">
+                                <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
+                                whitespace-nowrap px-4 transition-colors"
+                                    href="{{ route('challenge.free') }}">
+                                    <div
+                                        class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                                        <i
+                                            class="relative top-0 text-sm leading-normal h-2 w-2 
+                                        {{ Request::is('admin-challenge-free') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        </i>
+                                    </div>
+                                    <span
+                                        class="ml-1 duration-300 opacity-100 pointer-events-none ease">Free Accounts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </details>
+            </li>
+
+
             
             <li class="mt-0.5 w-full">
                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors
@@ -168,7 +217,7 @@
                 </a>
             </li> 
             
-            --}}
+            
 
         </ul>
     </div>

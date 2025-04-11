@@ -9,6 +9,10 @@ Route::get('/admin-user-info',[AdminController::class,'userInfo'])->name('user.i
 
 Route::get('/admin-user-auth',[AdminController::class,'userAuth'])->name('user.auth');
 
+
+Route::get('/admin-challenge',[AdminController::class,'challenge'])->name('challenge');
+Route::get('/admin-challenge-free',[AdminController::class,'challengeFree'])->name('challenge.free');
+
 Route::get('/', function () {
     return view('admin.pages.dashboard');
 });

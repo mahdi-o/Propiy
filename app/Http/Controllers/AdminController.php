@@ -13,4 +13,12 @@ class AdminController extends Controller
     public function userAuth(){
         return view('admin.pages.user-auth');
     }
+
+    public function challenge(){
+        return view('admin.pages.challenge');
+    }
+
+    public function challengeFree(){
+        return view('admin.pages.challnege-free');
+    }
 }
