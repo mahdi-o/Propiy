@@ -13,6 +13,8 @@ Route::get('/admin-user-auth',[AdminController::class,'userAuth'])->name('user.a
 Route::get('/admin-challenge',[AdminController::class,'challenge'])->name('challenge');
 Route::get('/admin-challenge-free',[AdminController::class,'challengeFree'])->name('challenge.free');
 
+Route::get('/admin-challenge-buying',[AdminController::class,'challengeBuying'])->name('challenge.buying');
+
 Route::get('/', function () {
     return view('admin.pages.dashboard');
 });
