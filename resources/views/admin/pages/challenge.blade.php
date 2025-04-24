@@ -218,6 +218,7 @@
 
 
 
+        <!-- Start Row 3 -->
         <div class="w-full rounded-xl shadow space-y-2">
             <!-- Table Head Wrapper -->
             <div class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
@@ -238,23 +239,24 @@
             </div>
 
             <!-- Table Body Wrapper -->
-            <div
-                class="rounded-xl border border-gray-100 bg-white dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto transition hover:bg-gray-200">
-                <table class="min-w-full text-left text-sm">
+            <div class="rounded-xl border border-gray-100 bg-white overflow-hidden hover:bg-gray-200 transition">
+                {{-- <div class="rounded-xl border border-gray-100 bg-white dark:bg-slate-850 dark:shadow-dark-xl overflow-hidden hover:bg-gray-200 transition"> --}}
+
+                <table class="w-full text-left">
                     <tbody>
                         <tr>
                             <td colspan="8" class="text-center px-4 py-10 text-gray-500 dark:text-gray-400">
                                 <img src="{{ asset('assets/img/site/challenge-empty.png') }}" alt="Empty"
-                                    class="mx-auto w-40 sm:w-48 mb-4">
+                                    class="mx-auto w-48 mb-4">
                                 <h5 class="text-lg font-semibold mb-2">No new account found!</h5>
-                                <p class="mb-6 text-sm leading-relaxed max-w-xs sm:max-w-none mx-auto">
+                                <p class="mb-6 text-sm leading-relaxed">
                                     To create a new account and participate in challenges, click on the new challenge.<br>
                                     And if you have not yet completed identity verification, make sure to complete the
                                     process.
                                 </p>
-                                <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+                                <div class="flex justify-center gap-4">
                                     <button
-                                        class="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-medium px-4 py-2 rounded-lg transition duration-150">
+                                        class="flex items-center gap-2 bg-orange-500 text-white font-medium px-4 py-1 rounded-lg transition duration-150">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -262,10 +264,12 @@
                                         </svg>
                                         <span>New Challenge</span>
                                     </button>
+
                                     <button
-                                        class="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:border-orange-500 hover:text-orange-500 dark:hover:bg-gray-800 transition">
+                                        class="px-4 py-1 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:border-orange-500 hover:text-orange-500 dark:hover:bg-gray-800 transition">
                                         Authentication
                                     </button>
+
                                 </div>
                             </td>
                         </tr>
@@ -273,4 +277,7 @@
                 </table>
             </div>
         </div>
-    @endsection
+        <!-- End Row 3 -->
+
+    </div>
+@endsection
