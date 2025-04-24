@@ -1990,6 +1990,12 @@ h6 {
   background-color: rgb(17 28 68 / var(--tw-bg-opacity));
 }
 
+
+.bg-slate-650 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33, 54, 131 / var(--tw-bg-opacity));
+}
+
 .bg-\[hsla\(0\2c 0\%\2c 100\%\2c 0\.8\)\] {
   background-color: hsla(0,0%,100%,0.8);
 }
@@ -3795,9 +3801,20 @@ h6 {
   background-color: rgb(17 28 68 / var(--tw-bg-opacity));
 }
 
+
+.dark .dark\:bg-slate-650 {
+  background-color: rgb(33, 54, 131 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-slate-850\/80 {
   background-color: rgb(17 28 68 / 0.8);
 }
+
+.dark .dark\:bg-slate-650\/80 {
+  background-color: rgb(33, 54, 131);
+}
+
+.dark .dark\:
 
 .dark .dark\:bg-white {
   --tw-bg-opacity: 1;

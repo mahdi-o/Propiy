@@ -2,24 +2,26 @@
 @section('content')
     <div class="flex flex-col gap-10 bg-white dark:bg-slate-850 dark:shadow-dark-xl mx-auto py-5 px-7 rounded-2xl w-full">
         <!-- Start Row 1 -->
-        {{-- <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3">
 
             <div class="grid grid-cols-12 gap-4">
 
-                <div class="col-span-12 lg:col-span-8 bg-orange-400 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-10 rounded-2xl py-5">
+                <div
+                    class="col-span-12 lg:col-span-8 bg-orange-400 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-10 rounded-2xl py-5">
                     <div class="flex flex-wrap sm:flex-nowrap justify-center text-center items-center gap-8">
-                        
-                     <div class="flex flex-row justify-start text-center items-center gap-5">
-                        <div>
-                            <img src="https://cdn.propiy.com/public/public/images/panel/challenges.svg" alt=""
-                                width="70">
-                        </div>
 
-                        <div class="flex flex-col gap-3 items-start text-left justify-start pt-2 text-white">
-                            <p class="mb-0 text-lg font-bold text-white"> Participate in the new challenge!</p>
-                            <p class="mb-0 text-lg text-white"> Start your journey to success in investment management </p>
+                        <div class="flex flex-row justify-start text-center items-center gap-5">
+                            <div>
+                                <img src="https://cdn.propiy.com/public/public/images/panel/challenges.svg" alt=""
+                                    width="70">
+                            </div>
+
+                            <div class="flex flex-col gap-3 items-start text-left justify-start pt-2 text-white">
+                                <p class="mb-0 text-lg font-bold text-white"> Participate in the new challenge!</p>
+                                <p class="mb-0 text-lg text-white"> Start your journey to success in investment management
+                                </p>
+                            </div>
                         </div>
-                     </div>
 
                         <div class="px-3 items-center justify-center text-center mt-4 ">
                             <div
@@ -109,7 +111,7 @@
             </div>
             <!-- End Second Grid -->
 
-        </div> --}}
+        </div>
         <!-- End Row 1 -->
 
         <!-- Start Row 2 -->
@@ -214,14 +216,11 @@
         </div>
         <!-- End Row 2 -->
 
-
-
-
-
         <!-- Start Row 3 -->
         <div class="w-full rounded-xl shadow space-y-2">
             <!-- Table Head Wrapper -->
-            <div class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
+            <div
+                class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
                 <table class="min-w-full text-left text-sm">
                     <thead>
                         <tr class="text-gray-800 dark:text-white whitespace-nowrap">

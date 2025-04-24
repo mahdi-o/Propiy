@@ -93,7 +93,7 @@
                         <ul>
                             <li class="mt-0.5 w-full  hover:bg-gray-200 rounded-xl hover:cursor-pointer">
                                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
-                                whitespace-nowrap px-4 transition-colors "
+                                whitespace-nowrap px-4 transition-colors"
                                     href="{{ route('challenge') }}">
                                     <div
                                         class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
