@@ -14,6 +14,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+
+  
 var page = window.location.pathname.split("/").pop().split(".")[0];
 var aux = window.location.pathname.split("/");
 var to_build = (aux.includes('pages') || aux.includes('docs') ?'../':'./');
@@ -87,3 +90,27 @@ function loadStylesheet(FILE_URL) {
 
   document.head.appendChild(dynamicStylesheet);
 }
+
+
+
+const input = document.getElementById('customInput');
+const defaultValue = 'Account Number';
+let hasTyped = false;
+
+input.addEventListener('input', () => {
+  if (!hasTyped) {
+    input.value = input.value.slice(-1); // فقط همون اولین حرفی که کاربر زد بمونه
+    hasTyped = true;
+  }
+   // اگر input خالی شد، مقدار اولیه رو برگردون
+if (input.value.trim() === '') {
+  input.value = defaultValue;
+  hasTyped = false;
+  // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
+  setTimeout(() => {
+    input.setSelectionRange(0, 0); // کرسر بره اول
+  }, 0);
+}
+}
+
+);

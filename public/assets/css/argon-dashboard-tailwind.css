@@ -1815,10 +1815,22 @@ h6 {
   --tw-border-opacity: 1;
   border-color: rgb(210 214 218 / var(--tw-border-opacity));
 }
-
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55, 65, 81);
+}
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(94 114 228 / var(--tw-border-opacity));
+}
+
+.border-orange-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22);
+}
+
+.border-black {
+  border-color: rgb(0, 0, 0);
 }
 
 .border-black\/12\.5 {
@@ -1873,6 +1885,8 @@ h6 {
   border-bottom-color: rgb(233 236 239 / var(--tw-border-opacity));
 }
 
+
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 249 250 / var(--tw-bg-opacity));
@@ -1881,6 +1895,11 @@ h6 {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(94 114 228 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2037,7 +2056,7 @@ h6 {
 
 .from-orange-500 {
   --tw-gradient-from: #fb6340;
-  --tw-gradient-to: rgb(251 99 64 / 0);
+  --tw-gradient-to: rgb(249 115 22);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2046,6 +2065,7 @@ h6 {
   --tw-gradient-to: rgb(17 113 239 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+
 
 .from-green-600 {
   --tw-gradient-from: #17ad37;
@@ -2632,7 +2652,7 @@ h6 {
 
 .text-orange-500 {
   --tw-text-opacity: 1;
-  color: rgb(251 99 64 / var(--tw-text-opacity));
+  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .text-emerald-500 {
@@ -3231,7 +3251,7 @@ h6 {
 .after\:from-orange-500::after {
   content: var(--tw-content);
   --tw-gradient-from: #fb6340;
-  --tw-gradient-to: rgb(251 99 64 / 0);
+  --tw-gradient-to: rgb(249 115 22);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -3367,6 +3387,14 @@ h6 {
   border-color: rgb(94 114 228 / 0.95);
 }
 
+.checked\:border-blue-500\/95:checked {
+  border-color: rgb(94 114 228 / 0.95);
+}
+
+.checked\:border-orange-500\/95:checked{
+  border-color: rgb(249 115 22);
+}
+
 .checked\:border-slate-800\/95:checked {
   border-color: rgb(58 65 111 / 0.95);
 }
@@ -3377,6 +3405,9 @@ h6 {
 
 .checked\:bg-blue-500\/95:checked {
   background-color: rgb(94 114 228 / 0.95);
+}
+.checked\:bg-orange-500\/95:checked{
+  background-color: rgb(249 115 22 / 0.95);
 }
 
 .checked\:bg-slate-800\/95:checked {
@@ -3452,6 +3483,11 @@ h6 {
   border-color: rgb(94 114 228 / var(--tw-border-opacity));
 }
 
+.hover\:border-orange-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 99 64 / var(--tw-text-opacity));
+}
+
 .hover\:border-slate-700:hover {
   --tw-border-opacity: 1;
   border-color: rgb(52 71 103 / var(--tw-border-opacity));
@@ -3488,6 +3524,12 @@ h6 {
   --tw-text-opacity: 1;
   color: rgb(94 114 228 / var(--tw-text-opacity));
 }
+
+.hover\:text-orange-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 
 .hover\:text-slate-700:hover {
   --tw-text-opacity: 1;
@@ -3526,6 +3568,11 @@ h6 {
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(94 114 228 / var(--tw-border-opacity));
+}
+
+.focus\:border-orange-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 
 .focus\:border-fuchsia-300:focus {
@@ -3577,6 +3624,11 @@ h6 {
   border-color: rgb(94 114 228 / var(--tw-border-opacity));
 }
 
+.active\:border-orange-500:active
+{
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+}
+
 .active\:border-white\/75:active {
   border-color: rgb(255 255 255 / 0.75);
 }
@@ -3585,7 +3637,10 @@ h6 {
   --tw-bg-opacity: 1;
   background-color: rgb(94 114 228 / var(--tw-bg-opacity));
 }
-
+.active\:bg-orange-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
 .active\:bg-slate-700:active {
   --tw-bg-opacity: 1;
   background-color: rgb(52 71 103 / var(--tw-bg-opacity));
@@ -3641,6 +3696,11 @@ h6 {
 .active\:hover\:text-blue-500:hover:active {
   --tw-text-opacity: 1;
   color: rgb(94 114 228 / var(--tw-text-opacity));
+}
+
+.active\:hover\:text-orange-500:hover:active {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .active\:hover\:text-slate-700:hover:active {
@@ -4404,4 +4464,10 @@ h6 {
   .xl-max\:opacity-65 {
     opacity: 0.65;
   }
+}
+
+.details-open[open] summary {
+  background-color: rgb(249, 232, 218);
+  color: black;
+  border-color: rgb(249 115 22);
 }
