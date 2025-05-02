@@ -15,6 +15,9 @@ Route::get('/admin-challenge-free',[AdminController::class,'challengeFree'])->na
 
 Route::get('/admin-challenge-buying',[AdminController::class,'challengeBuying'])->name('challenge.buying');
 
+Route::get('/admin-challenge-order',[AdminController::class,'challengeOrder'])->name('challenge.order');
+
+
 Route::get('/', function () {
     return view('admin.pages.dashboard');
 });

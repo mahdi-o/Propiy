@@ -141,14 +141,14 @@
            {{--  --}}
            {{--  --}}
             <li>
-                <details {{ Request::is('admin-challenge') || Request::is('admin-challenge-free') ? 'open' : '' }}>
+                <details {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'open' : '' }}>
                     <summary
                         class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
                         items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
                         hover:cursor-pointer"
                         href="#">
           
-                        <svg class="h-6 w-6 {{ Request::is('admin-challenge') || Request::is('admin-challenge-free') ? 'text-orange-500' : 'text-gray-800' }}" viewBox="0 0 24 24" fill="none"
+                        <svg class="h-6 w-6 {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'text-orange-500' : 'text-gray-800' }}" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="7" height="7" />
                             <rect x="14" y="3" width="7" height="7" />
@@ -163,12 +163,12 @@
                             <li class="mt-0.5 w-full  hover:bg-gray-200 rounded-xl hover:cursor-pointer">
                                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
                                 whitespace-nowrap px-4 transition-colors"
-                                    href="{{ route('challenge') }}">
+                                    href="{{ route('challenge.buying') }}">
                                     <div
                                         class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                                         <i
                                             class="relative top-0 text-sm leading-normal h-2 w-2 
-                                        {{ Request::is('admin-challenge') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        {{ Request::is('admin-challenge-buying') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
                                         </i>
                                     </div>
                                     <span
@@ -179,12 +179,12 @@
                             <li class="mt-0.5 w-full hover:bg-gray-200 rounded-xl hover:cursor-pointer">
                                 <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center 
                                 whitespace-nowrap px-4 transition-colors"
-                                    href="{{ route('challenge.free') }}">
+                                    href="{{ route('challenge.order') }}">
                                     <div
                                         class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                                         <i
                                             class="relative top-0 text-sm leading-normal h-2 w-2 
-                                        {{ Request::is('admin-challenge-free') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
+                                        {{ Request::is('admin-challenge-order') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
                                         </i>
                                     </div>
                                     <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">My Orders</span>

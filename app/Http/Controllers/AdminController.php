@@ -25,4 +25,8 @@ class AdminController extends Controller
     public function challengeBuying(){
         return view('admin.pages.challenge-buying');
     }
+
+    public function challengeOrder(){
+        return view('admin.pages.challenge-order');
+    }
 }

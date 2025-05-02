@@ -4488,3 +4488,26 @@ h6 {
   color: black;
   border-color: rgb(249 115 22);
 }
+
+/* تغییرات برای حالت hover */
+.group:hover .ant-radio-inner {
+  border-color: #f97316; /* orange-500 */
+}
+
+/* تغییرات برای زمانی که رادیو چک شده */
+.ant-radio-input:checked + .ant-radio-inner {
+  background-color: #fff; /* سفید برای حفظ رنگ اصلی دایره */
+  border-color: #f97316; /* نارنجی برای حاشیه */
+  position: relative; /* برای افزودن نقطه نارنجی */
+}
+
+.ant-radio-input:checked + .ant-radio-inner::after {
+  content: ''; /* برای ایجاد نقطه */
+  position: absolute;
+  top: 4px; /* موقعیت افقی نقطه */
+  left: 4px; /* موقعیت عمودی نقطه */
+  width: 8px; /* اندازه نقطه */
+  height: 8px; /* اندازه نقطه */
+  border-radius: 50%; /* دایره بودن نقطه */
+  background-color: #f97316; /* رنگ نارنجی */
+}
