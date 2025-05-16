@@ -280,3 +280,28 @@
 
     </div>
 @endsection
+@section('script')
+    <script>
+        const input = document.getElementById('customInput');
+const defaultValue = 'Account Number';
+let hasTyped = false;
+
+input.addEventListener('input', () => {
+  if (!hasTyped) {
+    input.value = input.value.slice(-1); // فقط همون اولین حرفی که کاربر زد بمونه
+    hasTyped = true;
+  }
+   // اگر input خالی شد، مقدار اولیه رو برگردون
+if (input.value.trim() === '') {
+  input.value = defaultValue;
+  hasTyped = false;
+  // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
+  setTimeout(() => {
+    input.setSelectionRange(0, 0); // کرسر بره اول
+  }, 0);
+}
+}
+
+);
+    </script>
+@endsection
