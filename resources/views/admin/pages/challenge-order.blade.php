@@ -111,45 +111,38 @@
         <!-- Start Row 2 -->
         <div class="w-full rounded-xl shadow space-y-2">
             <!-- Table Head Wrapper -->
-            <div
-                class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
-                <table class="min-w-full text-left text-sm">
-
-                    <thead>
-                        <tr class="text-gray-800 dark:text-white whitespace-nowrap">
-                            <th class="px-4 py-2 w-50">Order Number</th>
-                            <th class="px-4 py-2 w-50">Order Amount</th>
-                            <th class="px-4 py-2 w-50">Account Balance</th>
-                            <th class="px-4 py-2 w-50">Broker</th>
-                            <th class="px-4 py-2 w-50">Platform</th>
-                            <th class="px-4 py-2 w-50">Created Date</th>
-                            <th class="px-4 py-2 w-50">Status</th>
-                        </tr>
-                    </thead>
-
-
-                </table>
-
+            <div class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
+              <table class="min-w-full text-left text-sm table-fixed border-collapse">
+                <thead>
+                  <tr class="text-gray-800 dark:text-white whitespace-nowrap bg-gray-50 dark:bg-slate-850">
+                    <th class="px-4 py-2 w-[14.28%]">Order Number</th>
+                    <th class="px-4 py-2 w-[14.28%]">Order Amount</th>
+                    <th class="px-4 py-2 w-[14.28%]">Account Balance</th>
+                    <th class="px-4 py-2 w-[14.28%]">Broker</th>
+                    <th class="px-4 py-2 w-[14.28%]">Platform</th>
+                    <th class="px-4 py-2 w-[14.28%]">Created Date</th>
+                    <th class="px-4 py-2 w-[14.28%]">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                  <tr class="bg-white dark:bg-white text-gray-800 dark:text-white whitespace-nowrap overflow-hidden hover:bg-gray-200 transition border-t border-gray-100 dark:border-slate-700">
+                   {{-- <td colspan="7"
+                class="rounded-xl border border-gray-100 bg-white overflow-hidden hover:bg-gray-200 transition text-center justify-center items-center py-5">
+                There is no data
+            </td> --}}
+                    <td class="px-4 py-2 w-[14.28%]">372845</td>
+                    <td class="px-4 py-2 w-[14.28%]">4493300</td>
+                    <td class="px-4 py-2 w-[14.28%]">5000</td>
+                    <td class="px-4 py-2 w-[14.28%]">propridge</td>
+                    <td class="px-4 py-2 w-[14.28%]">mt5</td>
+                    <td class="px-4 py-2 w-[14.28%]">2025-02-17 21:51:40</td>
+                    <td class="px-4 py-2 w-[14.28%]">Pending</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="rounded-xl border border-gray-100 bg-white dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto ">
-                <table class="min-w-full text-left text-sm border-collapse border-spacing-0">
-                    <tbody>
-                        <tr
-                            class="bg-white dark:bg-white text-gray-800 dark:text-white whitespace-nowrap overflow-hidden hover:bg-gray-200 transition">
-                            <td class="px-4 py-2 w-50">372845</td>
-                            <td class="px-4 py-2 w-50">4493300</td>
-                            <td class="px-4 py-2 w-50">5000</td>
-                            <td class="px-4 py-2 w-50">propridge</td>
-                            <td class="px-4 py-2 w-50">mt5</td>
-                            <td class="px-4 py-2 w-50">2025-02-17 21:51:40</td>
-                            <td class="px-4 py-2 w-50">Pending</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
+          </div>
         <!-- End Row 2 -->
 
     </div>
