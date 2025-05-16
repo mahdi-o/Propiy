@@ -114,3 +114,20 @@
     overflow: auto !important;
   }
 }
+
+/* رفع مشکل اسکرول فقط برای div خاص */
+.custom-scroll {
+  overflow: auto !important;
+}
+
+.custom-scroll .ps__rail-x,
+.custom-scroll .ps__rail-y {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.custom-scroll .ps__thumb-x,
+.custom-scroll .ps__thumb-y {
+  background-color: #aaa !important;
+  border-radius: 6px !important;
+}
