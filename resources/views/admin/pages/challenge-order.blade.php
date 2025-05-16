@@ -20,12 +20,14 @@
                             <summary
                                 class="w-full px-2 py-1 h-9 border text-center justify-center items-center border-gray-700 active:border-orange-500 focus:border-orange-500 hover:border-orange-500 rounded-lg
                              bg-white text-gray-900  cursor-pointer list-none ">
+
+
+
                                 <div class="flex flex-row justify-between text-center items-center">
-                                    <div class="flex flex-row justify-start items-start">
-                                        <p>
-                                            Created Date
-                                        </p>
-                                    </div>
+                                    <input id="CreateDateInput" type="text" data-jdp
+                                        class="text-black dark:text-white dark:focus:border-orange-500 focus:border-orange-500 hover:border-orange-500
+                              focus:ring-0 outline-none rounded-lg px-3"
+                                        placeholder="Created Date">
 
                                     <svg class="h-8 w-8 text-gray-900 pb-3" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -86,15 +88,15 @@
                                     class="px-2 py-1 hover:bg-orange-100 cursor-pointer overflow-hidden transition-all duration-500 rounded-md">
                                     In Progress</li>
 
-                                    <li
+                                <li
                                     class="px-2 py-1 hover:bg-orange-100 cursor-pointer overflow-hidden transition-all duration-500 rounded-md">
                                     Incomplete</li>
 
-                                    <li
+                                <li
                                     class="px-2 py-1 hover:bg-orange-100 cursor-pointer overflow-hidden transition-all duration-500 rounded-md">
                                     Refunded</li>
 
-                                    <li
+                                <li
                                     class="px-2 py-1 hover:bg-orange-100 cursor-pointer overflow-hidden transition-all duration-500 rounded-md">
                                     Canceled</li>
                             </ul>
@@ -112,37 +114,38 @@
         <div class="w-full rounded-xl shadow space-y-2">
             <!-- Table Head Wrapper -->
             <div class="rounded-xl border border-gray-100 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl overflow-x-auto">
-              <table class="min-w-full text-left text-sm table-fixed border-collapse">
-                <thead>
-                  <tr class="text-gray-800 dark:text-white whitespace-nowrap bg-gray-50 dark:bg-slate-850">
-                    <th class="px-4 py-2 w-[14.28%]">Order Number</th>
-                    <th class="px-4 py-2 w-[14.28%]">Order Amount</th>
-                    <th class="px-4 py-2 w-[14.28%]">Account Balance</th>
-                    <th class="px-4 py-2 w-[14.28%]">Broker</th>
-                    <th class="px-4 py-2 w-[14.28%]">Platform</th>
-                    <th class="px-4 py-2 w-[14.28%]">Created Date</th>
-                    <th class="px-4 py-2 w-[14.28%]">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    
-                  <tr class="bg-white dark:bg-white text-gray-800 dark:text-white whitespace-nowrap overflow-hidden hover:bg-gray-200 transition border-t border-gray-100 dark:border-slate-700">
-                   {{-- <td colspan="7"
+                <table class="min-w-full text-left text-sm table-fixed border-collapse">
+                    <thead>
+                        <tr class="text-gray-800 dark:text-white whitespace-nowrap bg-gray-50 dark:bg-slate-850">
+                            <th class="px-4 py-2 w-[14.28%]">Order Number</th>
+                            <th class="px-4 py-2 w-[14.28%]">Order Amount</th>
+                            <th class="px-4 py-2 w-[14.28%]">Account Balance</th>
+                            <th class="px-4 py-2 w-[14.28%]">Broker</th>
+                            <th class="px-4 py-2 w-[14.28%]">Platform</th>
+                            <th class="px-4 py-2 w-[14.28%]">Created Date</th>
+                            <th class="px-4 py-2 w-[14.28%]">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr
+                            class="bg-white dark:bg-white text-gray-800 dark:text-white whitespace-nowrap overflow-hidden hover:bg-gray-200 transition border-t border-gray-100 dark:border-slate-700">
+                            {{-- <td colspan="7"
                 class="rounded-xl border border-gray-100 bg-white overflow-hidden hover:bg-gray-200 transition text-center justify-center items-center py-5">
                 There is no data
             </td> --}}
-                    <td class="px-4 py-2 w-[14.28%]">372845</td>
-                    <td class="px-4 py-2 w-[14.28%]">4493300</td>
-                    <td class="px-4 py-2 w-[14.28%]">5000</td>
-                    <td class="px-4 py-2 w-[14.28%]">propridge</td>
-                    <td class="px-4 py-2 w-[14.28%]">mt5</td>
-                    <td class="px-4 py-2 w-[14.28%]">2025-02-17 21:51:40</td>
-                    <td class="px-4 py-2 w-[14.28%]">Pending</td>
-                  </tr>
-                </tbody>
-              </table>
+                            <td class="px-4 py-2 w-[14.28%]">372845</td>
+                            <td class="px-4 py-2 w-[14.28%]">4493300</td>
+                            <td class="px-4 py-2 w-[14.28%]">5000</td>
+                            <td class="px-4 py-2 w-[14.28%]">propridge</td>
+                            <td class="px-4 py-2 w-[14.28%]">mt5</td>
+                            <td class="px-4 py-2 w-[14.28%]">2025-02-17 21:51:40</td>
+                            <td class="px-4 py-2 w-[14.28%]">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-          </div>
+        </div>
         <!-- End Row 2 -->
 
     </div>
@@ -150,25 +153,32 @@
 @section('script')
     <script>
         const input = document.getElementById('customInput');
-const defaultValue = 'Order Number';
-let hasTyped = false;
+        const defaultValue = 'Order Number';
+        let hasTyped = false;
 
-input.addEventListener('input', () => {
-  if (!hasTyped) {
-    input.value = input.value.slice(-1); // فقط همون اولین حرفی که کاربر زد بمونه
-    hasTyped = true;
-  }
-   // اگر input خالی شد، مقدار اولیه رو برگردون
-if (input.value.trim() === '') {
-  input.value = defaultValue;
-  hasTyped = false;
-  // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
-  setTimeout(() => {
-    input.setSelectionRange(0, 0); // کرسر بره اول
-  }, 0);
-}
-}
+        input.addEventListener('input', () => {
+                if (!hasTyped) {
+                    input.value = input.value.slice(-1); // فقط همون اولین حرفی که کاربر زد بمونه
+                    hasTyped = true;
+                }
+                // اگر input خالی شد، مقدار اولیه رو برگردون
+                if (input.value.trim() === '') {
+                    input.value = defaultValue;
+                    hasTyped = false;
+                    // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
+                    setTimeout(() => {
+                        input.setSelectionRange(0, 0); // کرسر بره اول
+                    }, 0);
+                }
+            }
 
-);
+        );
+    </script>
+
+    <script>
+        jalaliDatepicker.startWatch({
+            minDate: "attr",
+            maxDate: "attr",
+        });
     </script>
 @endsection

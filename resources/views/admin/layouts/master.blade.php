@@ -27,6 +27,8 @@
   
     @include('admin.layouts.footer')
   
+    <script src="{{ asset('assets/js/jalalidatepicker.min.js') }}"></script>
+
     <!-- plugin for charts  -->
     <script src="{{ asset('assets/js/plugins/chartjs.min.js') }}" async></script>
     <!-- plugin for scrollbar  -->
