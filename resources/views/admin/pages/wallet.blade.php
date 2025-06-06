@@ -2,7 +2,7 @@
 @section('content')
     <div class="flex flex-col gap-10 bg-white dark:bg-slate-850 dark:shadow-dark-xl mx-auto py-5 px-7 rounded-2xl w-full">
         <!-- Start Row 1 -->
-        <div class="flex flex-col gap-3">
+        {{-- <div class="flex flex-col gap-3">
 
             <div class="grid grid-cols-12 gap-4">
                 <div
@@ -113,9 +113,122 @@
             </div>
             <!-- End Second Grid -->
 
+        </div> --}}
+        <!-- End Row 1 -->
+
+
+
+
+
+        <!-- Start Row 1 -->
+        <div class="flex flex-col gap-3">
+
+            
+            <div class="grid grid-cols-12 gap-2 xs:gap-3 sm:gap-4">
+                <div class="col-span-12 bg-emerald-500 opacity-70 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-10 lg:px-4  xs:px-6 sm:px-8  rounded-2xl xs:py-4 py-5">
+                    <div class="flex flex-row justify-between text-center items-center gap-4 xs:gap-6 sm:gap-8">
+                        <div class="flex flex-row justify-start text-center items-center gap-3 xs:gap-4 sm:gap-5">
+                            <div>
+                                <img src="{{ asset('assets/img/wallet.png') }}" alt="Wallet" class="max-w-12 xs:max-w-16 sm:max-w-20" width="80">
+                            </div>
+                            <div class="flex flex-col gap-2 xs:gap-3 items-start text-left justify-start pt-1 xs:pt-2 text-white">
+                                <p class="mb-0 text-xl font-bold text-white">Your Wallet Balance</p>
+                                <p class="mb-0 text-lg text-white">Your wallet represents the equivalent of deposits and transferred profits.</p>
+                            </div>
+                        </div>
+                        <div class="px-2 xs:px-3 sm:px-3 lg:px-3 items-center justify-center text-center mt-2 xs:mt-3 sm:mt-4">
+                            <div class="inline-block px-4 xs:px-6 sm:px-8 lg:px-10 py-1 xs:py-2 mb-2 xs:mb-4 ml-auto">
+                                <h3 class="text-2xl text-white">$ 135</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Second Grid -->
+            <div class="grid grid-cols-12 gap-2 xs:gap-4">
+                <div
+                    class="col-span-12 sm:col-span-6 lg:col-span-4 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-4 xs:px-5 sm:px-7 rounded-2xl py-3 xs:py-4 sm:py-5">
+                    <div class="flex flex-row justify-between gap mb-3 xs:mb-5">
+                        <div class="flex flex-row gap-2">
+                            <svg class="text-orange-500 w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M2 8.5h12.5M6 16.5h2M10.5 16.5h4" stroke="currentColor" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M22 14.03v2.08c0 3.51-.89 4.39-4.44 4.39H6.44C2.89 20.5 2 19.62 2 16.11V7.89c0-3.51.89-4.39 4.44-4.39h8.06M20 9.5v-6l2 2M20 3.5l-2 2"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <p class="mb-0 text-base xs:text-lg sm:text-xl font-bold text-black dark:text-white">Deposit</p>
+                        </div>
+                        <svg class="h-5 xs:h-6 w-5 xs:w-6 text-gray-500" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </div>
+                    <p class="text-sm xs:text-base sm:text-lg font-bold">Your wallet is instantly charged.</p>
+                </div>
+
+                <div
+                    class="col-span-12 sm:col-span-6 lg:col-span-4 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-4 xs:px-5 sm:px-7 rounded-2xl py-3 xs:py-4 sm:py-5">
+                    <div class="flex flex-row justify-between gap mb-3 xs:mb-5">
+                        <div class="flex flex-row gap-2">
+                            <svg class="text-orange-500 w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M2 8.5h12.5M6 16.5h2M10.5 16.5h4" stroke="currentColor" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M22 14.03v2.08c0 3.51-.89 4.39-4.44 4.39H6.44C2.89 20.5 2 19.62 2 16.11V7.89c0-3.51.89-4.39 4.44-4.39h8.06M20 3.5v6l2-2M20 9.5l-2-2"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <p class="mb-0 text-base xs:text-lg sm:text-xl font-bold text-black dark:text-white">Withdraw
+                            </p>
+                        </div>
+                        <svg class="h-5 xs:h-6 w-5 xs:w-6 text-gray-500" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </div>
+                    <p class="text-sm xs:text-base sm:text-lg font-bold">Send to other wallets on the blockchain platform.
+                    </p>
+                </div>
+
+                <div
+                    class="col-span-12 sm:col-span-6 lg:col-span-4 bg-gray-50 dark:bg-slate-850 dark:shadow-dark-xl mx-auto w-full px-4 xs:px-5 sm:px-7 rounded-2xl py-3 xs:py-4 sm:py-5">
+                    <div class="flex flex-row justify-between gap mb-3 xs:mb-5">
+                        <div class="flex flex-row gap-2">
+                            <svg class="text-orange-500 w-6 xs:w-7 sm:w-8 h-6 xs:h-7 sm:h-8"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M8.672 14.33c0 1.29.99 2.33 2.22 2.33h2.51c1.07 0 1.94-.91 1.94-2.03 0-1.22-.53-1.65-1.32-1.93l-4.03-1.4c-.79-.28-1.32-.71-1.32-1.93 0-1.12.87-2.03 1.94-2.03h2.51c1.23 0 2.22 1.04 2.22 2.33M12 6v12"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M15 22H9c-5 0-7-2-7-7V9c0-5 2-7 7-7h6c5 0 7 2 7 7v6c0 5-2 7-7 7Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <p class="mb-0 text-base xs:text-lg sm:text-xl font-bold text-black dark:text-white">Show Profit
+                            </p>
+                        </div>
+                        <svg class="h-5 xs:h-6 w-5 xs:w-6 text-gray-500" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </div>
+                    <p class="text-sm xs:text-base sm:text-lg font-bold">Show Profit in My Accounts</p>
+                </div>
+            </div>
+            <!-- End Second Grid -->
         </div>
         <!-- End Row 1 -->
 
+
+        
         <!-- Start Row 2 -->
         <div class="flex flex-row">
             <div class="">
@@ -265,7 +378,8 @@
                                     class="mx-auto w-48 mb-4">
                                 <h5 class="text-lg font-semibold mb-2">No transactions found!</h5>
                                 <p class="mb-6 text-sm leading-relaxed">
-                                    To proceed with withdrawal, completing the third-level identity verification is required.
+                                    To proceed with withdrawal, completing the third-level identity verification is
+                                    required.
                                 </p>
                                 <div class="flex justify-center gap-4">
                                     <button
