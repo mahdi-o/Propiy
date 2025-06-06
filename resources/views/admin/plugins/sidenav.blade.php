@@ -136,20 +136,18 @@
             </li>
 
 
-           {{--  --}}
-           {{--  --}}
-           {{--  --}}
-           {{--  --}}
             <li>
-                <details {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'open' : '' }}>
+                <details
+                    {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'open' : '' }}>
                     <summary
                         class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
                         items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
                         hover:cursor-pointer"
                         href="#">
-          
-                        <svg class="h-6 w-6 {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'text-orange-500' : 'text-gray-800' }}" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                        <svg class="h-6 w-6 {{ Request::is('admin-challenge-order') || Request::is('admin-challenge-buying') ? 'text-orange-500' : 'text-gray-800' }}"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="7" height="7" />
                             <rect x="14" y="3" width="7" height="7" />
                             <rect x="14" y="14" width="7" height="7" />
@@ -187,7 +185,8 @@
                                         {{ Request::is('admin-challenge-order') ? 'bg-orange-500' : 'bg-gray-300' }} rounded-3xl">
                                         </i>
                                     </div>
-                                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">My Orders</span>
+                                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">My
+                                        Orders</span>
                                 </a>
                             </li>
                         </ul>
@@ -195,7 +194,44 @@
                 </details>
             </li>
 
+            <li>
+                <a class="dark:text-white dark:opacity-80 py-3 text-sm ease-nav-brand my-0 mx-5 flex flex-row gap-5 
+                        items-center text-center justify-start whitespace-nowrap px-4 transition-colors hover:bg-gray-200 rounded-xl 
+                        hover:cursor-pointer"
+                    href="{{ route('admin.wallet') }}">
+                    <svg class="h-6 w-6 {{ Request::is('admin-wallet') ? 'text-orange-500' : 'text-gray-800' }}"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                        <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                    </svg>
+                    <span class="text-center  duration-300 opacity-100 pointer-events-none ease">Wallet</span>
+                </a>
+            </li>
 
+
+            {{-- <li class="mt-0.5 w-full">
+                <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors
+           {{ Request::is('admin-wallet') ? 'myActive' : '' }}"
+                    href="{{ route('admin.wallet') }}">
+                    <div
+                        class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <svg class="h-6 w-6 {{ Request::is('admin-wallet') ? 'text-orange-500' : 'text-gray-800' }}"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+                            <path
+                                d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                            <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                        </svg>
+
+                       
+                    </div>
+                    <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Wallet</span>
+                </a>
+            </li> --}}
+            {{--  --}}
+            {{--  --}}
+            {{--  --}}
+            {{--  --}}
 
             <li class="mt-0.5 w-full">
                 <a class="dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors

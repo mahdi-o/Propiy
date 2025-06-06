@@ -29,7 +29,7 @@
                               focus:ring-0 outline-none rounded-lg px-3"
                                         placeholder="Created Date">
 
-                                    <svg class="h-8 w-8 text-gray-900 pb-3" width="24" height="24"
+                                    <svg class="h-6 w-6 text-gray-900"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                         stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" />
@@ -55,7 +55,7 @@
                              bg-white text-gray-900 cursor-pointer list-none ">
                                 <div class="flex flex-row justify-between text-center items-center">
                                     <div class="flex flex-row justify-start items-start">
-                                        <svg class="h-10 w-10 text-gray-700 pb-3" width="24" height="24"
+                                        <svg class="h-7 w-7 mr-2 text-gray-700" width="24" height="24"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" />
@@ -162,14 +162,14 @@
                     hasTyped = true;
                 }
                 // اگر input خالی شد، مقدار اولیه رو برگردون
-                if (input.value.trim() === '') {
-                    input.value = defaultValue;
-                    hasTyped = false;
-                    // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
-                    setTimeout(() => {
-                        input.setSelectionRange(0, 0); // کرسر بره اول
-                    }, 0);
-                }
+                // if (input.value.trim() === '') {
+                //     input.value = defaultValue;
+                //     hasTyped = false;
+                //     // می‌خوای درجا بتونه بنویسه؟ بهتره کرسر بره آخرش:
+                //     setTimeout(() => {
+                //         input.setSelectionRange(0, 0); // کرسر بره اول
+                //     }, 0);
+                // }
             }
 
         );

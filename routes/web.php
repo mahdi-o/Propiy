@@ -17,6 +17,8 @@ Route::get('/admin-challenge-buying',[AdminController::class,'challengeBuying'])
 
 Route::get('/admin-challenge-order',[AdminController::class,'challengeOrder'])->name('challenge.order');
 
+Route::get('/admin-wallet',[AdminController::class,'wallet'])->name('admin.wallet');
+
 
 Route::get('/', function () {
     return view('admin.pages.dashboard');
